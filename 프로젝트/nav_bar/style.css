@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.808);
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  font-size: 14px;
+
+  /* margin: 0px 86.4px; */
+  /* padding: 7px 40px; */
+  padding: 7px 250px;
+  width: auto;
+  /* height: 44px; */
+  /* box-sizing: content-box; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar__logo {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.651);
+  padding: 0px 10px;
+}
+
+.navbar__logo a:hover {
+  color: white;
+}
+
+.navbar__menu {
+  display: contents;
+  list-style: none;
+  padding: 0px -10px;
+  font-style: normal;
+  font-family: "SF Pro Display";
+}
+.navbar__menu li {
+  padding: 0 10px;
+  font-family: sans-serif;
+}
+.navbar__menu a:hover {
+  color: white;
+}
+
+.navbar__icons {
+  list-style: none;
+  color: white;
+  display: contents;
+  padding: 0px 10px;
+}
+.navbar__icons li {
+  padding: 0px 10px;
+}
+.navbar__icons a:hover {
+  color: white;
+}
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  left: 20px;
+  top: 18px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.container a {
+  color: #06c;
+  text-decoration: none;
+}
+.container a:hover {
+  text-decoration: underline;
+}
+.main__img div {
+  padding-bottom: 10px;
+}
+/* .container p {
+  padding: 10px 0px;
+  width: 100%;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: "SF Pro Display";
+} */
+
+.headline {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 10px;
+}
+.headline1 {
+  background-image: url("/images/hero_airpods_max__b5cnoj1rzu9y_large\ 큰거.jpg");
+  background-size: auto;
+}
+
+.headline2 {
+  background-image: url("/images/iphone_12_us__fo0stbby242m_large큰거.jpg");
+  background-size: cover;
+}
+
+.headline3 {
+  background-image: url("/images/iphone_12_pro_us__e5oyysg4k0ya_large큰거.jpg");
+  background-size: cover;
+}
+
+.line {
+  box-sizing: border-box;
+  display: flex;
+  margin: 12px 0;
+}
+
+.main__grid a {
+  width: 50%;
+  margin: 0 12px;
+}
+
+.main__grid a:not(:first-child) {
+  margin-left: 0px;
+}
+
+.img {
+  width: 100%;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.img1 {
+  background-color: black;
+  background-image: url("/images/watch.jpg");
+}
+
+line {
+  text-decoration: none;
+}
+
+.img2 {
+  background-color: white;
+  background-image: url("/images/tile__cauwwcyyn9hy_large.jpg");
+}
+
+.img3 {
+  background-color: black;
+  background-image: url("/images/macbook_air__knzp0i282eyy_medium.jpg");
+}
+
+.img4 {
+  background-color: #f1f1f3;
+  background-image: url("/images/tile__cauwwcyyn9hy_medium.jpg");
+}
+
+.img5 {
+  background-color: white;
+  background-image: url("/images/promo_medium.jpg");
+}
+
+.img6 {
+  background-color: black;
+  background-image: url("/images/macbook_pro_13__koscrc0x6wam_medium.jpg");
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center center;
+  font-size: 12px;
+  color: #86868b;
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 20px;
+}
+.footer__wrap {
+  padding: 0 270px;
+  background-color: #f5f5f7;
+}
+.footer__wrap p {
+  color: #86868b;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0.8em;
+  word-break: keep-all;
+}
+.footer__side {
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+  font-size: 12px;
+  text-align: left;
+  padding-top: 20px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d2d2d7;
+}
+.footer__side li {
+  color: #86868b;
+  padding-bottom: 10px;
+}
+.footer__catagory {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    padding: 8px 24px;
+    width: auto;
+  }
+  .navbar__logo {
+    align-items: center;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__icons {
+    justify-content: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar__toggleBtn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .navbar__icons.active,
+  .navbar__menu.active {
+    display: flex;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .headline1 {
+    background-image: url("/images/미디어\ imax.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .headline2 {
+    background-image: url("/images/미디어\ iphone.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .headline3 {
+    background-image: url("/images/미디어\ iphone2.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .line {
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
+    /* margin: 12px 0; */
+  }
+  .main__grid a {
+    width: 100%;
+    /* margin: 0 12px; */
+  }
+  .img {
+    width: 100%;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+  }
+  .img1 {
+    background-color: black;
+
+    background-image: url("/images/watch.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+  }
+  .img2 {
+    background-color: white;
+    background-image: url("/images/ipad\ Air.jpg");
+  }
+  .img3 {
+    background-color: black;
+    background-image: url("/images/macbook_air__knzp0i282eyy_medium.jpg");
+  }
+  .img4 {
+    background-color: rgba(128, 128, 128, 0.116);
+    background-image: url("/images/tile__cauwwcyyn9hy_medium.jpg");
+  }
+  .img5 {
+    background-color: white;
+    background-image: url("/images/promo_medium.jpg");
+  }
+  .img6 {
+    background-color: black;
+    background-image: url("/images/macbook_pro_13__koscrc0x6wam_medium.jpg");
+  }
+  .footer__side,
+  .footer__text {
+    display: none;
+  }
+  .login__main {
+    padding-left: 22px;
+  }
+}
+body {
+  text-align: left;
+}
+.login__main {
+  padding-top: 30px;
+  padding-bottom: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  padding-left: 22px;
+}
+.login__header {
+  padding-top: 34px;
+  padding-bottom: 36px;
+}
+.form__textbox {
+  line-height: 1.35296;
+  border-color: #d2d2d7;
+  color: #1d1d1f;
+  text-overflow: ellipsis;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  /* margin-left: auto;
+  margin-right: auto;
+  max-width: 980px; */
+}
+.form-textbox-input {
+  font-size: 17px;
+  font-weight: 400;
+  width: 100%;
+  height: 3.29412rem;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  margin-bottom: 0.82353rem;
+  padding: 1.05882rem 0.94118rem;
+  text-align: left;
+  color: #98989c;
+}
+.login__box {
+  margin: 13.6px 149.2px 0 0;
+  box-sizing: content-box;
+  padding-right: 40px;
+  width: 410px;
+  height: 350px;
+}
+.login__info {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+.form__button {
+  background: #0071e3;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  padding: 18px 31px;
+  /* max-width: 28px; */
+  width: 100%;
+  border-radius: 12px;
+  border: 0;
+  padding-bottom: 18px;
+}
+.forgotpassword a,
+.accountcreation a {
+  margin-top: 7px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #06c;
+  text-decoration: none;
+}
+.forgotpassword,
+.accountcreation {
+  margin-top: 10px;
+}
+.forgotpassword a:hover,
+.accountcreation a:hover {
+  text-decoration: underline;
+}
